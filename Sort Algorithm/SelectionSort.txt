@@ -1,0 +1,10 @@
+Mảng chia ra 2 phần Sorted và Unsorted
+cho vòng for(i = 0 -> n - 1) và Min_index = i; duyệt mảng bằng for(j = i+1 -> n - 1) từ [i+1] -> [last], tìm nếu thấy phần tử nào nhỏ(lớn) hơn A[min_index] thì cập nhật min_index = index;
+sau khi có min_index của mảng Unsorted thì swap với phần tử đầu của Unsorted; i++ (phần tử đầu của Unsorted đẩy sang Sorted), tiếp tục các bước trên
+
+EX: Mảng 7 phần tử
+1 5 4 7 6 12 2
+0 1 2 3 4 5 6 (index)
+
+Bước 1: i = 0, j = 1, min_index = i = 0; duyệt từ A[1] -> A[6] bằng j++ => min_index = 0; swap(a[0], a[0]); Sorted (1) , Unsorted(5 4 7 6 12 2)
+Bước 1: i = 1, j = 1, min_index = i = 1; duyệt từ A[1] -> A[6] bằng j++ => min_index = 1; swap(a[0], a[0]); 

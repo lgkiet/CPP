@@ -1,0 +1,32 @@
+$_Bước 1: TÌM DOMAIN COMPANY - EMAIL DOMAIN ("Ex: @dnu.co -> mục tiêu")
+- Lấy tên đuôi công ty -> paste google theo format các câu lệnh
+	*** : tên công ty con
+	#1: *** "@"
+	#4: ***
+	#3: *** "@Company_Email_Domain" (giả lập)	
+	#4: "@Company_Email_Domain" +CallingCode (giả lập)
+   1.1. -> Ctrl F tìm "@" kết hợp tìm từng page GG 
+-> vào các page khả nghi tìm kiếm EMAIL_DOMAIN (contact,...) -> xác định được EMAIL_DOMAIN
+   1.2. -> EMAIL_DOMAIN -> add vào Sheet + name: general Email
+   1.3. -> tìm Specific Email (bước 2)
+
+*NOTE: + Nếu có kí hiệu (operator office) hoặc tương tự -> bỏ qua kí hiệu và tìm kiếm 
+HOẶC có công ty cùng tên nhưng k có kí hiệu (...) thì COPY ALL xuống công ty có kí hiệu.
+	 + Nếu là file PDF hoặc k thể truy cập thì sử dụng CACHED_PAGE 
+ 
+$_Bước 2: Tìm SPECIFIC EMAIL ("Ex: kim.a.lin@dnu.co -> mục tiêu")
+- Lấy EMAIL_DOMAIN -> paste google theo format các câu lệnh
+	#1: "@domain"
+	#2: "@domain" site:groups.google.com HOẶC groups.google.com -> set công ty ngoài + tất cả
+	#3: *** "@domain"
+	#4: "@domain" +CallingCode
+   2.1. -> Xác định các Specific Email đạt tiêu chuẩn	(bao gồm: domain, tên == tên email, chuẩn format)
+   	2.1.1. -> Nếu đã có Specific Email nhưng tên chưa đạt chuẩn
+		 -> thực hiện search: - "specific email" (ex: kim.a.lin@dnu.co)
+			   		    	  - tách tên + tên cty (ex: kim.a.lin@dnu.co -> kim a lin Dong Nai Ubuntu)
+   	2.1.2. Nếu không thể tìm được tên -> add to SHEET + name: general Email
+   2.2. -> Xác định tên và Specific Email -> add to SHEET + name: name + email
+
+
+
+   
